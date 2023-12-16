@@ -1,0 +1,213 @@
+#combatSheet {
+    padding: 1cm;
+}
+
+
+#encounterInfo {
+    /* border: 1px solid darkgoldenrod; */
+    height: 4cm;
+    margin-bottom: .5cm;
+    background-image: url('/images/top-outline.svg');
+}
+
+#combatContent {
+    flex-direction: row;
+    /* border: 1px solid gold; */
+    flex: 1;
+}
+
+#combatLeft {
+    border: 1px solid greenyellow;
+    width: 4.5cm;
+    margin-right: .5cm;
+    border: none;
+}
+
+#initiativeTracker {
+    /* border: 1px solid blue; */
+    height: 18cm;
+    background-image: url('/images/initiative-tracker.svg');
+    padding-left: 5mm;
+    padding-right: 5mm;
+    margin-bottom: 5mm;
+    /* padding-bottom: 5mm; */
+}
+
+#combatNotes {
+    /* border: 1px solid palevioletred; */
+    flex: 1;
+    background-image: url('/images/notes.svg');
+    padding-left: 4mm;
+    padding-right: 4mm;
+}
+
+#combatMain {
+    /* border: 1px solid green; */
+    flex: 1;
+}
+
+#roundTracker {
+    /* border: 1px solid orange; */
+    height: 1cm;
+    margin-bottom: 1mm;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#roundBox {
+    background-image: url('/images/round.svg');
+    width: 39.885mm;
+    height: 9.9265mm;
+}
+
+#roundBox>span {
+    width: min-content;
+    height: min-content;
+    position: relative;
+    top: 3.2mm;
+    left: 10.5mm;
+}
+
+#combatTable {
+    /* border: 1px solid aqua; */
+    flex: 1;
+}
+
+.sectionTitle {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: .15cm;
+    font-weight: 600;
+    /* font-size: 8pt; */
+    color: #484848;
+    margin-bottom: 3mm;
+}
+
+.line {
+    background-color: #484848;
+    height: 0.3mm;
+}
+
+#initiativeList,
+#noteRowList {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items:center; */
+    padding-bottom: 5mm;
+    display: flex;
+}
+
+.initiativeRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.initiativeNumber {
+    /* display: flex; */
+    width: 4mm;
+    text-align: right;
+    vertical-align: middle;
+    padding-top: 1mm;
+    color: #484848;
+}
+
+.initiativeEntry,
+#noteRow {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    /* margin-left: 2mm; */
+}
+
+.initiativeNames {
+    display: flex;
+    margin-left: 2mm;
+}
+
+#comtatTableHeader {
+    border-bottom: solid black 0.6mm;
+    font-weight: 600;
+    align-items: end;
+    margin-bottom: 2mm;
+}
+
+.miniSep {
+    height: 3mm;
+    width: 0.6mm;
+    background-color: black;
+}
+
+.combatRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.combatRow>span,
+.combatRow>div {
+    text-align: center;
+}
+
+.combatTable-NameColumn {
+    width: 2cm;
+}
+
+.combatTable-HPColumn {
+    width: 2cm;
+}
+
+.combatTable-ReactionColumn {
+    width: 1.5cm;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#comtatTableHeader>div.combatTable-ReactionColumn>span {
+    margin-bottom: 0.7mm;
+    font-size: 8pt;
+}
+
+.combatTable-ConditionColumn {
+    flex-grow: 3;
+}
+
+.combatTable-ResourcesColumn {
+    flex-grow: 1;
+    min-width: 4.5cm;
+}
+
+#combatTableRowList>.combatRow {
+    height: 7mm;
+    align-items: end;
+}
+
+#combatTableRowList>.combatRow>div>.line {
+    margin-left: .8mm;
+    margin-right: .8mm;
+}
+
+#combatTableRowList>.combatRow>div:not(.miniSep) {
+    font-size: 8pt;
+    /* border: solid red 1px; */
+}
+
+#combatTableRowList>.combatRow>div>span {
+    /* vertical-align: bottom; */
+    position: relative;
+    top: 0.5mm;
+}
+
+.reactionCircle {
+    border-radius: 50%;
+    height: 3mm;
+    width: 3mm;
+    border: .6mm solid black;
+    margin-top: 2mm;;
+}
+
+#combatTableRowList > .combatRow > .miniSep {
+    visibility: hidden;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "encouter-builder",
+  "version": "1.0.0",
+  "description": "Automated tool to build D&amp;D 5E encounters",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node source/server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNU GENERAL PUBLIC LICENSE v3",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

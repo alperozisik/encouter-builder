@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Encounter</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/common-print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="style/encounter.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/encounter-print.css" media="print"> -->
+</head>
+
+<body class="page-size-A4">
+    <button class="do-not-print">Do not print</button>
+    <div id="combatSheet" class="page flex">
+        <div id="encounterInfo" class="flex">
+        </div>
+        <div id="combatContent" class="flex">
+            <div id="combatLeft" class="flex">
+                <div id="initiativeTracker" class="flex" min="-4" max="27">
+                    <span class="sectionTitle">Initiative Tracker</span>
+                    <div id="initiativeList" class="flex"></div>
+                </div>
+                <div id="combatNotes" class="flex">
+                    <span class="sectionTitle">Notes</span>
+                    <div id="noteRowList">
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                        <div class="noteRow"><span>&nbsp;</span>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="combatMain" class="flex">
+                <div id="roundTracker" class="flex">
+                    <div id="roundBox">
+                        <span>Round</span>
+                    </div>
+                </div>
+                <div id="combatTable" class="flex">
+                    <div id="comtatTableHeader" class="combatRow">
+                        <div class="miniSep"></div>
+                        <span class="combatTable-NameColumn">Name</span>
+                        <div class="miniSep"></div>
+                        <span class="combatTable-HPColumn">HP</span>
+                        <div class="miniSep"></div>
+                        <div class="combatTable-ReactionColumn"><span>Reaction</span></div>
+                        <div class="miniSep"></div>
+                        <span class="combatTable-ConditionColumn">Condition</span>
+                        <div class="miniSep"></div>
+                        <span class="combatTable-ResourcesColumn">Resources Used</span>
+                        <div class="miniSep"></div>
+                    </div>
+                    <div id="combatTableRowList"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script/docOps.js"></script>
+        <script>
+            (function () {
+                function docReady(fn) {
+                    if (document.readyState === "complete" || document.readyState === "interactive") {
+                        setTimeout(fn, 1);
+                    } else {
+                        document.addEventListener("DOMContentLoaded", fn);
+                    }
+                }
+
+                docReady(docLoad);
+            })();
+        </script>
+
+</body>
+
+</html>

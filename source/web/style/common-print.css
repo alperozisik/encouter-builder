@@ -1,0 +1,17 @@
+/* Hide everything except the .page class when printing */
+.do-not-print {
+    display: none;
+}
+
+body {
+    background-color: #ffffff;
+    /**/
+}
+
+.page {
+    /* display: block; */
+    margin: 0.5cm;
+    /**/
+    margin: 0;/**/
+    break-inside: avoid;
+}

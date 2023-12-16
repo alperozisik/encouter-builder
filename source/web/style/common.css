@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/umq6lvc.css");
+
+@font-face {
+    font-family: 'Scala Sans';
+    src: url('/font/ScalaSansOffc.ttf') format('truetype');
+    /* Add other formats if necessary for browser compatibility */
+    /* Example additional formats:
+       src: url('font/ScalaSansOffc.woff') format('woff'),
+            url('font/ScalaSansOffc.woff2') format('woff2');
+    */
+    /* Define font-weight and font-style if applicable */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-size: 10.5pt;
+    /* 10.5 points */
+    font-family: 'Scala Sans', sans-serif;
+}
+
+/* A4 Page Size */
+.page-size-A4 .page {
+    width: 21cm;
+    /* A4 width in centimeters */
+    height: 29.7cm;
+    /* A4 height in centimeters */
+}
+
+.page {
+    page-break-after: always;
+    background-color: #ffffff;
+    margin: 10pt;
+}
+
+div {
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}

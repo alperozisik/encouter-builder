@@ -46,19 +46,20 @@ function generateCombatRow({ name = "&nbsp;", hp = "&nbsp;" }) {
                                     <div class="line"></div>
                                 </div>
                                 <div class="miniSep"></div>
-                                <div class="combatTable-HPColumn"> <span>${hp}</span>
+                                <div class="combatTable-HPColumn"><span>${hp}</span>
                                     <div class="line"></div>
+                                    <div class="hp-sep"></div>
                                 </div>
                                 <div class="miniSep"></div>
                                 <div class="combatTable-ReactionColumn">
                                     <div class="reactionCircle"></div>
                                 </div>
                                 <div class="miniSep"></div>
-                                <div class="combatTable-ConditionColumn"> <span>&nbsp;</span>
+                                <div class="combatTable-ConditionColumn"><span>&nbsp;</span>
                                     <div class="line"></div>
                                 </div>
                                 <div class="miniSep"></div>
-                                <div class="combatTable-ResourcesColumn"> <span>&nbsp;</span>
+                                <div class="combatTable-ResourcesColumn"><span>&nbsp;</span>
                                     <div class="line"></div>
                                 </div>
                                 <div class="miniSep"></div>

@@ -18,7 +18,7 @@
 
 #combatLeft {
     border: 1px solid greenyellow;
-    width: 4.5cm;
+    width: 5cm;
     margin-right: .5cm;
     border: none;
 }
@@ -156,8 +156,22 @@
     width: 2cm;
 }
 
+#combatTableRowList>.combatRow>.combatTable-HPColumn>.hp-sep {
+    height: 2.5mm;
+    width: 0.3mm;
+    background-color: #484848;
+    position: relative;
+    top: 0mm;
+    left: -1cm;
+    float: right;
+}
+#combatTableRowList>.combatRow>.combatTable-HPColumn>.line {
+    position: relative;
+    top: 2.5mm;
+}
+
 .combatTable-ReactionColumn {
-    width: 1.5cm;
+    width: 0.5cm;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -167,7 +181,7 @@
 
 #comtatTableHeader>div.combatTable-ReactionColumn>span {
     margin-bottom: 0.7mm;
-    font-size: 8pt;
+    font-size: 5pt;
 }
 
 .combatTable-ConditionColumn {
@@ -205,9 +219,10 @@
     height: 3mm;
     width: 3mm;
     border: .6mm solid black;
-    margin-top: 2mm;;
+    margin-top: 2mm;
+    ;
 }
 
-#combatTableRowList > .combatRow > .miniSep {
+#combatTableRowList>.combatRow>.miniSep {
     visibility: hidden;
 }
